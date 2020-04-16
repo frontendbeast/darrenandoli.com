@@ -1,6 +1,9 @@
 .header {
   border-bottom: 1px solid #ccc;
-  padding: 0.625rem 0;
+  
+  @media screen and (max-width: 32.4375em) {
+    padding: 0.625rem 0;
+  }
 }
 
   .header__link {
@@ -10,7 +13,7 @@
     justify-content: center;
     text-decoration: none;
 
-    @media screen and (max-width: 32.4275em) {
+    @media screen and (max-width: 32.4375em) {
       flex-direction: column;
     } 
   }
@@ -18,6 +21,20 @@
   .header__monogram {
     margin: 0.625rem 1.25rem;
     width: 4.75rem;
+
+    @media screen and (min-width: 37.5em) {
+      margin: 0.625rem 2.5rem;
+    }
+  }
+
+  .header__name {
+    @media screen and (min-width: 32.5em) {
+      width: 33%;
+
+      &:first-of-type {
+        text-align: right;
+      }
+    }
   }
 
   .header__text {
