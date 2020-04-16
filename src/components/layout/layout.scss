@@ -1,10 +1,65 @@
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.125rem;
+  line-height: 1.6;
   margin: 0;
+}
+
+p {
+  margin: 1.25rem;
 }
 
 h1 {
   font-weight: normal;
+}
+
+.ratio {
+  background-image: url('../../images/budir-church-xs.jpg');
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+
+  @media screen and (min-width: 32.5em) {
+    background-image: url('../../images/budir-church-sm.jpg');
+  }
+
+  @media screen and (min-width: 43.75em) {
+    background-image: url('../../images/budir-church-md.jpg');
+  }
+
+  @media screen and (min-width: 50em) {
+    background-image: url('../../images/budir-church-lg.jpg');
+  }
+
+  @media screen and (min-width: 75em) {
+    background-image: url('../../images/budir-church-xl.jpg');
+  }
+}
+
+  .ratio__container {
+    margin: 0 auto;
+    width: 100%;
+    max-height: 300px;
+    max-width: 1200px;
+  }
+
+  .ratio__padding {
+    padding-top: 56.25%;
+
+    @media screen and (min-width: 32.5em) {
+      padding-top: 46.25%;
+    }
+
+    @media screen and (min-width: 43.75em) {
+      padding-top: 36.25%;
+    }
+
+    @media screen and (min-width: 50em) {
+      padding-top: 26.25%;
+    }
+  }
 
 .centred {
   text-align: center;
