@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Oli Dickinson and Darren Hall | 18-07-21 | Búðir Iceland`,
+    description: `Eighteenth of July Two Thousand and Twenty One. Búðir, Iceland`,
+    author: `Darren Hall`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
