@@ -1,5 +1,5 @@
 .header {
-  @media screen and (max-width: 32.4375em) {
+  @media screen and (max-width: 37.4375em) {
     padding: 0.625rem 0;
   }
 }
@@ -11,7 +11,7 @@
     justify-content: center;
     text-decoration: none;
 
-    @media screen and (max-width: 32.4375em) {
+    @media screen and (max-width: 37.4375em) {
       flex-direction: column;
     } 
   }
@@ -26,7 +26,7 @@
   }
 
   .header__name {
-    @media screen and (min-width: 32.5em) {
+    @media screen and (min-width: 37.5em) {
       width: 33%;
 
       &:first-of-type {
