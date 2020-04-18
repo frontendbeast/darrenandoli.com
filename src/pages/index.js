@@ -15,7 +15,7 @@ import GoogleMapReact from 'google-map-react';
 
 const places = [
   { lat: 64.8231767, lng: -23.3846827, label: "Hotel Búðir" },
-  { lat: 64.1334231, lng: -21.9925226, label: "Reykjavík" }
+  { lat: 64.1405833, lng: -21.9407392, label: "Reykjavík" }
 ]
 
 const createMapOptions = (maps) => {
