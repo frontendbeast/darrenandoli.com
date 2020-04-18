@@ -4,7 +4,7 @@ import React from "react"
 import './header.scss'
 
 const Header = () => (
-  <header className="header">
+  <header className="header bordered">
       <h1 className="header__text">
         <Link to="/" className="header__link">
           <span className="header__name">Oli Dickinson</span>

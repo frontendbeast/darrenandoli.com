@@ -19,58 +19,63 @@ p {
   }
 }
 
-h1 {
+h1, h2 {
+  font-family: 'Gill Sans Light', 'Gill Sans', 'Gill Sans MT', sans-serif;
   font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
 }
 
-.ratio {
-  background-image: url('../../images/budir-church-xs.jpg');
-  background-position: center;
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
+h2 {
+  line-height: 1rem;
+  margin: 1.25rem 0;
+  text-align: center;
 
   @media screen and (min-width: 32.5em) {
-    background-image: url('../../images/budir-church-sm.jpg');
-  }
-
-  @media screen and (min-width: 43.75em) {
-    background-image: url('../../images/budir-church-md.jpg');
-  }
-
-  @media screen and (min-width: 50em) {
-    background-image: url('../../images/budir-church-lg.jpg');
-  }
-
-  @media screen and (min-width: 75em) {
-    background-image: url('../../images/budir-church-xl.jpg');
+    margin-bottom: 2.5rem;
   }
 }
 
-  .ratio__container {
-    margin: 0 auto;
-    width: 100%;
-    max-height: 300px;
-    max-width: 1200px;
+.bordered {
+  border-bottom: 1px solid #ccc;
+}
+
+.button {
+  border: 1px solid #000;
+  color: #000;
+  display: inline-block;
+  font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+  font-size: 0.8rem;
+  font-weight: normal;
+  letter-spacing: 0.125rem;
+  line-height: 1;
+  margin-bottom: 0.625rem;
+  margin-right: 0.625rem;
+  padding: 0.625rem 1.25rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.25s background-color, 0.25s color;
+
+  &:hover {
+    color: #fff;
+    background-color: #000;
   }
-
-  .ratio__padding {
-    padding-top: 56.25%;
-
-    @media screen and (min-width: 32.5em) {
-      padding-top: 46.25%;
-    }
-
-    @media screen and (min-width: 43.75em) {
-      padding-top: 36.25%;
-    }
-
-    @media screen and (min-width: 50em) {
-      padding-top: 26.25%;
-    }
-  }
+}
 
 .centred {
+  font-family: 'Gill Sans Light', 'Gill Sans', 'Gill Sans MT', sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 0.125rem;
+  padding: 0 1.25rem;
   text-align: center;
   text-transform: uppercase;
+
+  @media screen and (min-width: 32.5em) {
+    padding: 1.25rem 0;
+  }
 }
+
+@import '../../scss/gallery';
+@import '../../scss/ratio';
+@import '../../scss/section';

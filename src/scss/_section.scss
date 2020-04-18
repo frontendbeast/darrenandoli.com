@@ -1,0 +1,17 @@
+.section {
+  margin: 2.5rem auto;
+  max-width: 37.5em;
+
+  @media screen and (max-width: 40em) {
+    padding: 0 1.25rem;
+  }
+}
+
+.section--wide {
+  max-width: 75rem;
+  padding: 0 1.25rem;
+
+  @media screen and (min-width: 42.5em) {
+    padding: 0 2.5rem;
+  }
+}

@@ -1,0 +1,42 @@
+.gallery {
+  display: flex;
+
+  @media screen and (max-width: 37.4375em) {
+    flex-wrap: wrap;
+  }
+}
+
+  .gallery__image {
+    display: block;
+    max-width: 100%;
+  }
+
+  .gallery__item {
+    @media screen and (max-width: 37.4375em) {
+      box-sizing: border-box;
+      flex-basis: 50%;
+      
+      &:first-child {
+        flex-basis: 100%;
+        margin-bottom: 1.25rem;
+      }
+
+      &:nth-child(2) {
+        padding-right: 0.625rem;
+      }
+
+      &:nth-child(3) {
+        padding-left: 0.625rem;
+      }
+    }
+
+    & + & { 
+      @media screen and (min-width: 37.5em) {
+        margin-left: 1.5rem;
+      }
+
+      @media screen and (min-width: 50em) {
+        margin-left: 2.5rem;
+      }
+    }
+  }
