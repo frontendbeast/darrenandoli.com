@@ -1,13 +1,22 @@
+@font-face {
+  font-family: 'Gill Sans Light';
+  src: url('../../fonts/gill-sans-light-webfont-webfont.woff') format('woff');
+}
+
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
-  font-size: 0.75rem;
-  letter-spacing: 0.125rem;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1rem;
+  font-weight: 300;
   line-height: 1.6;
   margin: 0;
 }
 
 p {
-  margin: 1.25rem;
+  margin: 1.25rem 0;
+
+  &.button-group {
+    margin-bottom: 0.625rem;
+  }
 }
 
 h1 {
