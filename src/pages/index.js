@@ -69,7 +69,7 @@ const IndexPage = () => (
 
     <div className="section">
       <h2>The Venue</h2>
-      <p>Hotel B&uacute;&eth;ir is located around a two hour drive from Reykjavik. Set on a beach on the edge of a lava field near the Sn&aelig;fellsj&ouml;kull glacier, extinct volcanoes tower over the road, herds of shaggy Icelandic ponies huddle against the wind and seals bob in the estuary.</p>
+      <p>Hotel B&uacute;&eth;ir is located around a two hour drive from Reykjavik. Set on a beach on the edge of a lava field near the Sn&aelig;fellsj&ouml;kull glacier, extinct volcanoes tower over the road, herds of shaggy Icelandic ponies roam the hills and seals bob in the estuary.</p>
       <p>The restaurant is renowned for its local gourmet fish and lamb dishes, original starters and heavenly desserts. There is a well stocked bar with an extensive wine list and cocktail menu and plenty of lounge areas to relax with views of the stunning landscape.</p>
       <p>There are 28 double bedrooms with views that really steal the show, so we recommend requesting a room looking out to the inlet and mountains.</p>
       <p className="button-group">
