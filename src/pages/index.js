@@ -43,7 +43,7 @@ const IndexPage = () => (
       <h2>The Day</h2>
       <p>While it is a little too soon to have detailed timings, we&rsquo;d like to give you an overview of the day.</p>
       <p>The ceremony will be conducted outside, within a short distance of the venue. Please plan your outfit accordingly. The temperature in Iceland in July averages 14&deg;C (57&deg;F), and being on the coast it may be windy. There will plenty of daylight, as the sun will not set until gone 11pm.</p>
-      <p>After the ceremony we will return to the venue. There will be a hrefast, followed by a meal and drinks. The remainder of the day will be spent in and around the venue and it&rsquo;s bar, you are welcome to stay and celebrate with us as long as you like!</p>
+      <p>After the ceremony we will return to the venue. There will be a toast, followed by a meal and drinks. The remainder of the day will be spent in and around the venue and its bar. You are welcome to stay and celebrate with us as long as you like!</p>
     </div>
 
     <div className="section section--wide">
@@ -72,7 +72,7 @@ const IndexPage = () => (
     <div className="section">
       <h2>The Venue</h2>
       <p>Hotel B&uacute;&eth;ir is located around a two hour drive from Reykjavik. Set on a beach on the edge of a lava field near the Sn&aelig;fellsj&ouml;kull glacier, extinct volcanoes tower over the road, herds of shaggy Icelandic ponies huddle against the wind and seals bob in the estuary.</p>
-      <p>The restaurant is renowned for it&rsquo;s local gourmet fish and lamb dishes, original starters and heavenly desserts. There is a well stocked bar with an extensive wine list and cocktail menu and plenty of lounge areas to relax with views of the stunning landscape.</p>
+      <p>The restaurant is renowned for its local gourmet fish and lamb dishes, original starters and heavenly desserts. There is a well stocked bar with an extensive wine list and cocktail menu and plenty of lounge areas to relax with views of the stunning landscape.</p>
       <p>There are 28 double bedrooms with views that really steal the show, so we recommend requesting a room looking out to the inlet and mountains.</p>
       <p className="button-group">
         <a href="https://hotelbudir.is/" className="button">Hotel B&uacute;&eth;ir website</a>
