@@ -56,14 +56,12 @@ const IndexPage = () => (
         </div>
         <div className="gallery__item">
           <picture>
-            <source srcset={HotelDog} media="(min-width: 37.5em)" />
-            <img src={HotelDogSm} alt="" className="gallery__image" />
+            <img src={HotelDog} alt="" className="gallery__image" />
           </picture>
         </div>
         <div className="gallery__item">
           <picture>
-            <source srcset={HotelLounge} media="(min-width: 37.5em)" />
-            <img src={HotelLoungeSm} alt="" className="gallery__image" />
+            <img src={HotelLounge} alt="" className="gallery__image" />
           </picture>
         </div>
       </div>
