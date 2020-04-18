@@ -6,19 +6,56 @@ import SEO from "../components/seo"
 
 import HotelOutsideSm from "../images/hotel-outside-sm.jpg"
 import HotelOutside from "../images/hotel-outside.jpg"
-import HotelDogSm from "../images/hotel-dog-sm.jpg"
 import HotelDog from "../images/hotel-dog.jpg"
-import HotelLoungeSm from "../images/hotel-lounge-sm.jpg"
 import HotelLounge from "../images/hotel-lounge.jpg"
+
+import Pin from "../components/pin"
 
 import GoogleMapReact from 'google-map-react';
 
-function createMapOptions(maps) {
+const places = [
+  { lat: 64.8231767, lng: -23.3846827, label: "Hotel Búðir" },
+  { lat: 64.1334231, lng: -21.9925226, label: "Reykjavík" }
+]
+
+const createMapOptions = (maps) => {
   return {
     styles: [{"elementType":"geometry","stylers":[{"color":"#f5f5f5"}]},{"elementType":"labels","stylers":[{"visibility":"off"}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"elementType":"labels.text.fill","stylers":[{"color":"#616161"}]},{"elementType":"labels.text.stroke","stylers":[{"color":"#f5f5f5"}]},{"featureType":"administrative.land_parcel","stylers":[{"visibility":"off"}]},{"featureType":"administrative.land_parcel","elementType":"labels.text.fill","stylers":[{"color":"#bdbdbd"}]},{"featureType":"administrative.neighborhood","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#eeeeee"}]},{"featureType":"poi","elementType":"labels.text.fill","stylers":[{"color":"#757575"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#e5e5e5"}]},{"featureType":"poi.park","elementType":"labels.text.fill","stylers":[{"color":"#9e9e9e"}]},{"featureType":"road","elementType":"geometry","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"labels.text.fill","stylers":[{"color":"#757575"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#dadada"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#616161"}]},{"featureType":"road.local","elementType":"labels.text.fill","stylers":[{"color":"#9e9e9e"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"color":"#e5e5e5"}]},{"featureType":"transit.station","elementType":"geometry","stylers":[{"color":"#eeeeee"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#c9c9c9"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#9e9e9e"}]}],
     disableDefaultUI: true,
   }
 }
+
+// Return map bounds based on list of places
+const getMapBounds = (map, maps, places) => {
+  const bounds = new maps.LatLngBounds();
+
+  places.forEach((place) => {
+    bounds.extend(new maps.LatLng(
+      place.lat,
+      place.lng,
+    ));
+  });
+  return bounds;
+};
+
+// Re-center map when resizing the window
+const bindResizeListener = (map, maps, bounds) => {
+  maps.event.addDomListenerOnce(map, 'idle', () => {
+    maps.event.addDomListener(window, 'resize', () => {
+      map.fitBounds(bounds);
+    });
+  });
+};
+
+// Fit map to its bounds after the api is loaded
+const apiIsLoaded = (map, maps, places) => {
+  // Get bounds by our places
+  const bounds = getMapBounds(map, maps, places);
+  // Fit map to bounds
+  map.fitBounds(bounds);
+  // Bind the resize listener
+  bindResizeListener(map, maps, bounds);
+};
 
 const IndexPage = () => (
   <Layout>
@@ -50,7 +87,7 @@ const IndexPage = () => (
       <div className="gallery">
         <div className="gallery__item">
           <picture>
-            <source srcset={HotelOutside} media="(min-width: 37.5em)" />
+            <source srcSet={HotelOutside} media="(min-width: 37.5em)" />
             <img src={HotelOutsideSm} alt="" className="gallery__image" />
           </picture>
         </div>
@@ -89,10 +126,13 @@ const IndexPage = () => (
           lat: 64.8542331,
           lng: -19.1079098
         }}
+        onGoogleApiLoaded={({ map, maps }) => apiIsLoaded(map, maps, places)}
         options={createMapOptions}
         style={{ position: 'absolute', width: '100%', height: '100%', top: 0, left: 0 }}
-        zoom={6.5}
-      />
+        zoom={6}
+      >
+        {places.map(place => <Pin lat={place.lat} lng={place.lng} label={place.label} />)}
+      </GoogleMapReact>
     </div>
 
     <div className="section">
