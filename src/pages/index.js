@@ -105,7 +105,7 @@ const IndexPage = () => (
 
     <div className="section">
       <h2>The Venue</h2>
-      <p>Hotel B&uacute;&eth;ir is located around a two hour drive from Reykjavik. Set on a beach on the edge of a lava field near the Sn&aelig;fellsj&ouml;kull glacier, extinct volcanoes tower over the road, herds of shaggy Icelandic ponies roam the hills and seals bob in the estuary.</p>
+      <p>Hotel B&uacute;&eth;ir is located around a two hour drive from Reykjav&iacute;k. Set on a beach on the edge of a lava field near the Sn&aelig;fellsj&ouml;kull glacier, extinct volcanoes tower over the road, herds of shaggy Icelandic ponies roam the hills and seals bob in the estuary.</p>
       <p>The restaurant is renowned for its local gourmet fish and lamb dishes, original starters and heavenly desserts. There is a well stocked bar with an extensive wine list and cocktail menu and plenty of lounge areas to relax with views of the stunning landscape.</p>
       <p>There are 28 double bedrooms with views that really steal the show, so we recommend requesting a room looking out to the inlet and mountains.</p>
       <p className="button-group">
@@ -144,7 +144,7 @@ const IndexPage = () => (
     <div className="section">
       <h2>Accommodation</h2>
       <p>Hotel B&uacute;&eth;ir is the venue for the celebration, and is also where we will be staying for the night. There are a limited number of rooms at the hotel, so we would recommend booking as soon as possible if you would like to stay there. Reservations are not yet available via the website this far in advance, but you can get in contact with the hotel via email and mention our names to make a booking.</p>
-      <p>There are a number of other guesthouses and cottages nearby, but due to the rural location you will need to your own transport to get to them as there is no taxi service available.</p>
+      <p>There are a number of other guesthouses and cottages nearby, but due to the rural location you will need to have your own transport to get to them, as there is no taxi service available.</p>
       <p>We will be staying in Reykjav&iacute;k the night before the celebration, and will be selecting a hotel in due course. </p>
       <p className="button-group">
         <a href="mailto:budir@hotelbudir.is" className="button">Email Hotel B&uacute;&eth;ir</a>
