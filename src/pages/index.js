@@ -58,8 +58,7 @@ const apiIsLoaded = (map, maps, places) => {
 };
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
+  <Layout>  
     <div className="centred">
       <p>Eighteenth of July<br/>Two Thousand And Twenty One</p>
       <p>B&uacute;&eth;ir, Iceland</p>
@@ -72,7 +71,7 @@ const IndexPage = () => (
     <div className="centred bordered">
       <p>If you haven’t already been in touch<br/>please let us know if you can attend</p>
       <p>
-        <Link to="/page-2" className="button">RSVP</Link>
+        <Link to="/rsvp" className="button">RSVP</Link>
       </p>
     </div>
 
