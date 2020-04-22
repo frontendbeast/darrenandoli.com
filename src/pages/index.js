@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout/layout"
-import SEO from "../components/seo"
 
 import HotelOutsideSm from "../images/hotel-outside-sm.jpg"
 import HotelOutside from "../images/hotel-outside.jpg"

@@ -15,3 +15,12 @@
     padding: 0 2.5rem;
   }
 }
+
+.section--narrow {
+  margin: 2.5rem auto;
+  max-width: 27.5em;
+
+  @media screen and (max-width: 30em) {
+    padding: 0 1.25rem;
+  }
+}

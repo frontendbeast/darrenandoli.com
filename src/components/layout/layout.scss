@@ -27,7 +27,7 @@ h1, h2 {
 }
 
 h2 {
-  line-height: 1rem;
+  line-height: 1;
   margin: 1.25rem 0;
   text-align: center;
 
@@ -41,6 +41,7 @@ h2 {
 }
 
 .button {
+  background-color: #fff;
   border: 1px solid #000;
   color: #000;
   display: inline-block;
@@ -60,6 +61,15 @@ h2 {
     color: #fff;
     background-color: #000;
   }
+    
+  &:focus {
+    box-shadow: 0 0 0 2px #ddd;
+    outline: none;
+  }
+
+  .centred & {
+    margin: 0 0 1.25rem 0;
+  }
 }
 
 .centred {
@@ -74,8 +84,15 @@ h2 {
   @media screen and (min-width: 32.5em) {
     padding: 1.25rem 0;
   }
+
+  .button + .button {
+    margin-left: 0.625rem;
+  }
 }
 
+@import '../../scss/checkbox';
 @import '../../scss/gallery';
+@import '../../scss/loader';
 @import '../../scss/ratio';
 @import '../../scss/section';
+@import '../../scss/rsvp';

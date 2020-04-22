@@ -1,0 +1,49 @@
+::placeholder {
+  color: #AAA;
+}
+
+input[type=text] {
+  border: 1px solid #666;
+  border-radius: 0;
+  box-sizing: border-box;
+  display: block;
+  font-size: 1rem;
+  font-family: 'Noto Serif JP', serif;
+  margin-bottom: 2.5rem;
+  padding: 0.625rem;
+  transition: 0.25s box-shadow;
+  width: 100%;
+    
+  &:focus {
+    box-shadow: 0 0 0 2px #ddd;
+    outline: none;
+  }
+
+  .centred & {
+    margin: 0 auto;
+    max-width: 200px;
+  }
+}
+
+label {
+  display: flex;
+  margin-bottom: 1.25rem;
+  position: relative;
+
+  .centred & {
+    flex-direction: column;
+  }
+}
+
+.rsvp__indent {
+  padding-left: 1.625rem;
+}
+
+.rsvp__name {
+  display: block;
+  font-size: 1rem;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: normal;
+  margin-bottom: 0.25rem;
+  text-transform: none;
+}
