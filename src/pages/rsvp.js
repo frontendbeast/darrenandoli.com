@@ -13,7 +13,7 @@ const guests = [
   { id: 'mafl', name: 'Martin Flynn', alias: '', partner: 'jafl', plusOne: false, accom: true },
   { id: 'iawi', name: 'Ian Wilson', alias: '', partner: false, plusOne: false, accom: true },
   { id: 'iabe', name: 'Isaac Berlin', alias: 'Ytzak', partner: false, plusOne: true, accom: false },
-  { id: 'jafl', name: 'Janet Flynn', alias: '', partner: 'mafl', plusOne: false, accom: true },
+  { id: 'jafl', name: 'Jan Flynn', alias: 'Janet', partner: 'mafl', plusOne: false, accom: true },
   { id: 'vili', name: 'Viv Liles', alias: 'Vivienne', partner: 'stai', plusOne: false, accom: true },
   { id: 'sawa', name: 'Sasha Ward', alias: '', partner: false, plusOne: true, accom: false }, 
   { id: 'scro', name: 'Scott Robinson', alias: '', partner: 'joly', plusOne: false, accom: false },

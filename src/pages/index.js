@@ -150,6 +150,16 @@ const IndexPage = () => (
       </p>
     </div>
 
+    <div className="bordered">
+      <div className="section">
+        <h2>Gifts</h2>
+        <p>The best gift you can give us is joining us to celebrate our wedding. The time, effort and expense in getting to Iceland are gift enough, so please do not feel that you need buy us anything.</p>
+        <p>If you insist on giving a gift, we are very much looking forward to our honeymoon and any contribution you make would be appreciated.</p>
+      </div>
+    </div>
+    <div className="section footer">
+        <p>If you have any questions at all, just drop us a text or a call, or you can email <a href="mailto:do@darrenandoli.com">do@darrenandoli.com</a>.</p>
+    </div>
     
   </Layout>
 )
