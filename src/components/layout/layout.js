@@ -18,6 +18,11 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <main>{children}</main>
+      <div className="bordered--top">
+        <div className="section footer">
+            <p>If you have any questions at all, just drop us a text or a call, or you can email <a href="mailto:do@darrenandoli.com">do@darrenandoli.com</a>.</p>
+        </div>
+      </div>
     </>
   )
 }

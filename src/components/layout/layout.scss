@@ -48,8 +48,12 @@ h2 {
   }
 }
 
-.bordered {
+.bordered--bottom {
   border-bottom: 1px solid #ccc;
+}
+
+.bordered--top {
+  border-top: 1px solid #ccc;
 }
 
 .button {
