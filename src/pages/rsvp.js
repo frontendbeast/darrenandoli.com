@@ -102,6 +102,10 @@ class RSVPPage extends React.Component {
     this.setState({ fields: fields });
   }
 
+  handleReview = event => {
+    this.setState({ stage: 'review' });
+  }
+
   handleSubmit = event => {
     const data = ["form-name=RSVP form"];
 
@@ -214,8 +218,44 @@ class RSVPPage extends React.Component {
                 <input type="text" name="attendingPartnerDietary" placeholder="Any dietary requirements?" onChange={this.handleInputChange} onBlur={this.handleInputChange} value={this.state.fields.attendingPartnerDietary} />
               </div>}
               <button className="button" onClick={this.handleBackToFind}>Back</button>
-              <button className="button" onClick={this.handleSubmit}>Submit</button>
+              <button className="button" onClick={this.handleReview}>Review</button>
             </div>
+          }
+          { this.state.stage === 'review' &&
+            <div className="section section--narrow">
+              <h2>RSVP</h2>
+              <p>Please check the details below before submitting:</p>
+              <blockquote>
+                <p>
+                  {guest.name}&nbsp;{this.state.fields.attendingGuest ? <>will be attending</> : <>will <strong>not</strong> be attending</>}
+                  {this.state.fields.attendingGuest &&
+                  <>
+                    <br/>
+                    <em>&mdash; Dietary requirements: {this.state.fields.attendingGuestDietary ? this.state.fields.attendingGuestDietary : 'None'}</em>
+                  </>}
+                  {this.state.fields.attendingGuest && guest.plusOne &&
+                  <>
+                    <br/>
+                    <em>&mdash; Plus one: {this.state.fields.attendingPlusOne ? 'Yes please' : 'No thank you'}</em>
+                  </>}
+                </p>
+                {partner && 
+                  <p>
+                    {partner.name}&nbsp;{this.state.fields.attendingPartner ? <>will be attending</> : <>will <strong>not</strong> be attending</>}
+                    {this.state.fields.attendingPartner &&
+                    <>
+                      <br/>
+                      <em>&mdash; Dietary requirements: {this.state.fields.attendingPartnerDietary ? this.state.fields.attendingPartnerDietary : 'None'}</em>
+                    </>}
+                  </p>
+                }
+              </blockquote>
+
+              <p>If you&rsquo;re happy with the details above, press submit to send them through.</p>
+
+              <button className="button" onClick={this.handleBackToConfirm}>Back</button>
+              <button className="button" onClick={this.handleSubmit}>Submit</button>
+              </div>
           }
           {
             this.state.stage === 'loading' && 

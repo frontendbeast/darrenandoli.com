@@ -15,12 +15,23 @@ a {
   }
 }
 
+blockquote {
+  border-left: 2px solid #ccc;
+  font-style: italic;
+  margin: 2.5rem 0;
+  padding-left: 1.25rem;
+}
+
 body {
   font-family: 'Noto Serif JP', serif;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.6;
   margin: 0;
+}
+
+em {
+  color: #666;
 }
 
 p {
