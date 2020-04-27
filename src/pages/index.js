@@ -86,7 +86,8 @@ const IndexPage = () => (
         <div className="gallery__item">
           <picture>
             <source srcSet={HotelOutside} media="(min-width: 37.5em)" />
-            <img src={HotelOutsideSm} alt="" className="gallery__image" />
+            <source srcSet={HotelOutsideSm} />
+            <img src={HotelOutside} alt="" className="gallery__image" />
           </picture>
         </div>
         <div className="gallery__item">

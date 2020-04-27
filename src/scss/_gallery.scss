@@ -12,6 +12,8 @@
   }
 
   .gallery__item {
+    flex: 1;
+    
     @media screen and (max-width: 37.4375em) {
       box-sizing: border-box;
       flex-basis: 50%;
