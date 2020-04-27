@@ -129,7 +129,7 @@ const IndexPage = () => (
         style={{ position: 'absolute', width: '100%', height: '100%', top: 0, left: 0 }}
         zoom={6}
       >
-        {places.map(place => <Pin lat={place.lat} lng={place.lng} label={place.label} />)}
+        {places.map((place, index) => <Pin lat={place.lat} lng={place.lng} label={place.label} key={`pin-${index}`} />)}
       </GoogleMapReact>
     </div>
 
