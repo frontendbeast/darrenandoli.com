@@ -17,11 +17,11 @@ const guests = [
   { id: 'vili', name: 'Viv Liles', alias: 'Vivienne', partner: 'stai', plusOne: false, accom: true },
   { id: 'sawa', name: 'Sasha Ward', alias: '', partner: false, plusOne: true, accom: false }, 
   { id: 'scro', name: 'Scott Robinson', alias: '', partner: 'joly', plusOne: false, accom: false },
-  { id: 'stdi', name: 'Steve Dickinson', alias: 'Steven', partner: false, plusOne: false },
+  { id: 'stdi', name: 'Steve Dickinson', alias: 'Stephen', partner: false, plusOne: false },
   { id: 'joly', name: 'Joey Lynch', alias: 'Joe', partner: 'scro', plusOne: false, accom: false },
   { id: 'stai', name: 'Stan Ainsworth', alias: 'Stanley', partner: 'vili', plusOne: false, accom: true },
 ]
-
+  
 class RSVPPage extends React.Component {
   
   state = {
