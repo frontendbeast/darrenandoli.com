@@ -1,9 +1,10 @@
 import { Link } from "gatsby"
+import PropTypes from "prop-types"
 import React from "react"
 
 import './header.scss'
 
-const Header = () => (
+const Header = ({ siteTitle }) => (
   <header className="header bordered--bottom">
       <h1 className="header__text">
         <Link to="/" className="header__link">
@@ -14,5 +15,13 @@ const Header = () => (
       </h1>
   </header>
 )
+
+Header.propTypes = {
+  siteTitle: PropTypes.string,
+}
+
+Header.defaultProps = {
+  siteTitle: ``,
+}
 
 export default Header
