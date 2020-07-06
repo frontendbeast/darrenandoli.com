@@ -22,7 +22,6 @@ const Layout = ({ children }) => {
       render={data => (
         <>
           <Header siteTitle={data.site.siteMetadata.title} />
-          <SEO title="" />
           <main>{children}</main>
           <div className="bordered--top">
             <div className="section footer">

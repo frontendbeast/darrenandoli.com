@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout/layout"
+import SEO from "../components/seo"
 
 import HotelOutsideSm from "../images/hotel-outside-sm.jpg"
 import HotelOutside from "../images/hotel-outside.jpg"
@@ -57,7 +58,8 @@ const apiIsLoaded = (map, maps, places) => {
 };
 
 const IndexPage = () => (
-  <Layout>  
+  <Layout>
+    <SEO title="" />
     <div className="centred">
       <p>Eighteenth of July<br/>Two Thousand And Twenty One</p>
       <p>B&uacute;&eth;ir, Iceland</p>
