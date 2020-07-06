@@ -89,17 +89,17 @@ const IndexPage = () => (
           <picture>
             <source srcSet={HotelOutside} media="(min-width: 37.5em)" />
             <source srcSet={HotelOutsideSm} />
-            <img src={HotelOutside} alt="" className="gallery__image" />
+            <img src={HotelOutside} alt="" loading="lazy" className="gallery__image" />
           </picture>
         </div>
         <div className="gallery__item">
           <picture>
-            <img src={HotelDog} alt="" className="gallery__image" />
+            <img src={HotelDog} alt="" loading="lazy" className="gallery__image" />
           </picture>
         </div>
         <div className="gallery__item">
           <picture>
-            <img src={HotelLounge} alt="" className="gallery__image" />
+            <img src={HotelLounge} alt="" loading="lazy" className="gallery__image" />
           </picture>
         </div>
       </div>
