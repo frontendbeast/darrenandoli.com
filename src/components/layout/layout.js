@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "../header/header"
-import SEO from "../seo"
 
 import "./layout.scss"
 
