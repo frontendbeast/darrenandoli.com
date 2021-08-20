@@ -122,7 +122,7 @@ const IndexPage = () => (
         <div className="ratio__padding"></div>
       </div>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: 'AIzaSyD_LAu2sMxAhoWXemHEqSoeBEVpt3_1Loc' }}
+        bootstrapURLKeys={{ key: 'AIzaSyBp8zaja3aZgyJRhDuBDWvRaL1Oj1xm-v8' }}
         defaultCenter={{
           lat: 64.8542331,
           lng: -19.1079098
