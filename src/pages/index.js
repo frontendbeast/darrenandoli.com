@@ -61,7 +61,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="" />
     <div className="centred">
-      <p>Eighteenth of July<br/>Two Thousand And Twenty One</p>
+      <p>Tenth of July<br/>Two Thousand And Twenty Two</p>
       <p>B&uacute;&eth;ir, Iceland</p>
     </div>
     <div className="ratio ratio--image">
@@ -138,9 +138,9 @@ const IndexPage = () => (
 
     <div className="section">
       <h2>Travel</h2>
-      <p>The main airport in Iceland is Keflav&iacute;k, which is about 45 minutes drive from Reykjav&iacute;k. Flights will be available to book from the middle of July 2020. We are planning on arriving at least a day before the wedding and staying in Reykjav&iacute;k prior to travelling to the venue.</p>
+      <p>The main airport in Iceland is Keflav&iacute;k, which is about 45 minutes drive from Reykjav&iacute;k. Flights will be available to book from the middle of July 2021. We are planning on arriving at least a day before the wedding and staying in Reykjav&iacute;k prior to travelling to the venue.</p>
       <p>You are of course free to arrive whenever you like, if you plan on exploring Iceland before the celebration or indeed after. We will coordinate travel plans once we can book flights.</p>
-      <p>Travel to and from the venue has been taken care of. We will depart from Reykjav&iacute;k on the morning of Sunday 18th July, 2021 and return to Reykjav&iacute;k the next day. If you are hiring your own car or would otherwise like to make your own travel arrangements, then please let us know.</p>
+      <p>Travel to and from the venue has been taken care of. We will depart from Reykjav&iacute;k on the morning of Sunday 10th July, 2022 and return to Reykjav&iacute;k the next day. If you are hiring your own car or would otherwise like to make your own travel arrangements, then please let us know.</p>
     </div>
 
     <div className="section">
