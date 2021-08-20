@@ -30,14 +30,16 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [
-          {
-            family: `Noto Serif JP`,
-            variants: [`300`]
-          },
-        ],
+        fonts: {
+          google: [
+            {
+              family: `Noto Serif JP`,
+              variants: [`300`]
+            },
+          ],
+        },
       },
     },
     {
