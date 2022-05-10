@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `http://darrenandoli.com`,
-    title: `Oli Dickinson and Darren Hall | 18-07-21 | Búðir Iceland`,
+    title: `Oli Dickinson and Darren Jansson | 10-07-22 | Búðir Iceland`,
     description: `Eighteenth of July Two Thousand and Twenty One. Búðir, Iceland`,
-    author: `Darren Hall`,
+    author: `Darren Jansson`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
